@@ -517,6 +517,25 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					function calculateTotalCost() {
+						// Retrieve the quantity value from the input field
+						const quantityInput = document.getElementById("quantity");
+						const quantity = parseInt(quantityInput.value);
+				  
+						// Define the price per shoe
+						const pricePerShoe = 3200000;
+				  
+						// Calculate the total cost
+						const totalCost = quantity * pricePerShoe;
+				  
+						// Output the total cost
+						const totalCostElement = document.getElementById("totalCost");
+						totalCostElement.textContent = totalCost + " VND";
+					  }
+					</script>
+</body>
+</html>
 				<div class="row row-pb-lg">
 					<div class="col-md-12">
 						<div class="total-wrap">
