@@ -462,8 +462,7 @@
 				</div>
 			</div>
 		</div>
-
-
+		<
 		<div class="colorlib-product">
 			<div class="container">
 				<div class="row row-pb-lg">
@@ -505,75 +504,56 @@
 									<h3>Adidas Supernova 2.0 Shoes</h3>
 								</div>
 							</div>
-							<head>
-								<title>Total Cost Calculation</title>
-							  </head>
-							  <body>
-								<div class="one-eight text-center">
-								  <div class="display-tc">
+							<div class="one-eight text-center">
+								<div class="display-tc">
 									<input type="number" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100">
-								  </div>
 								</div>
-								<div class="one-eight text-center">
-								  <div class="display-tc">
+							</div>
+							<div class="one-eight text-center">
+								<div class="display-tc">
 									<span class="price">3.200.000 VND</span>
-								  </div>
 								</div>
-								<div class="row row-pb-lg">
-								  <div class="col-md-12">
-									<div class="total-wrap">
-									  <div class="row">
-										<div class="col-sm-8">
-										  <form action="#">
-											<div class="row form-group">
-											  <div class="col-sm-9">
-												<input type="text" id="coupon" class="form-control input-number" placeholder="Your Coupon Number...">
-											  </div>
-											  <div class="col-sm-3">
-												<input type="submit" value="Apply Coupon" class="btn btn-primary" onclick="calculateTotalCost()">
-											  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-pb-lg">
+					<div class="col-md-12">
+						<div class="total-wrap">
+							<div class="row">
+								<div class="col-sm-8">
+									<form action="#">
+										<div class="row form-group">
+											<div class="col-sm-9">
+												<input type="text" name="quantity" class="form-control input-number" placeholder="Your Coupon Number...">
 											</div>
-										  </form>
+											<div class="col-sm-3">
+												<input type="submit" value="Apply Coupon" class="btn btn-primary">
+											</div>
 										</div>
-										<div class="col-sm-4 text-center">
-										  <div class="total">
-											<div class="sub">
-											  <p><span>Tax:</span> <span>50.000 VND</span></p>
-											</div>
-											<div class="grand-total">
-											  <p><span><strong>Total:</strong></span> <span id="totalCost">0 VND</span></p>
-											</div>
-											<div class="row">
-											  <div class="col-md-12 text-center">
+									</form>
+								</div>
+								<div class="col-sm-4 text-center">
+									<div class="total">
+										<div class="sub">
+											<p><span>Tax:</span> <span>50.000 VND</span></p>
+										</div>
+										<div class="grand-total">
+											<p><span><strong>Total:</strong></span> <span>3.250.000 VND</span></p>
+										</div>
+										<div class="row">
+											<div class="col-md-12 text-center">
 												<p><a href="../checkout.html" class="btn btn-primary">Checkout</a></p>
-											  </div>
 											</div>
-										  </div>
 										</div>
-									  </div>
 									</div>
-								  </div>
 								</div>
-							  
-								<script>
-								  function calculateTotalCost() {
-									// Retrieve the quantity value from the input field
-									const quantityInput = document.getElementById("quantity");
-									const quantity = parseInt(quantityInput.value);
-							  
-									// Define the price per shoe
-									const pricePerShoe = 3200000;
-							  
-									// Calculate the total cost
-									const totalCost = quantity * pricePerShoe;
-							  
-									// Output the total cost
-									const totalCostElement = document.getElementById("totalCost");
-									totalCostElement.textContent = totalCost + " VND";
-								  }
-								</script>
-							  </body>
-</html>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer id="colorlib-footer" role="contentinfo">
 			<div class="container">
 				<div class="row row-pb-md">
