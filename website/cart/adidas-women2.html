@@ -517,25 +517,6 @@
 						</div>
 					</div>
 				</div>
-				<script>
-					function calculateTotalCost() {
-						// Retrieve the quantity value from the input field
-						const quantityInput = document.getElementById("quantity");
-						const quantity = parseInt(quantityInput.value);
-				  
-						// Define the price per shoe
-						const pricePerShoe = 3200000;
-				  
-						// Calculate the total cost
-						const totalCost = quantity * pricePerShoe;
-				  
-						// Output the total cost
-						const totalCostElement = document.getElementById("totalCost");
-						totalCostElement.textContent = totalCost + " VND";
-					  }
-					</script>
-</body>
-</html>
 				<div class="row row-pb-lg">
 					<div class="col-md-12">
 						<div class="total-wrap">
@@ -555,11 +536,12 @@
 								<div class="col-sm-4 text-center">
 									<div class="total">
 										<div class="sub">
-											<p><span>Tax:</span> <span>50.000 VND</span></p>
+										  <p><span>Tax:</span> <span id="taxAmount">50,000 VND</span></p>
 										</div>
 										<div class="grand-total">
-											<p><span><strong>Total:</strong></span> <span>3.250.000 VND</span></p>
+										  <p><span><strong>Total:</strong></span> <span id="totalAmount">0 VND</span></p>
 										</div>
+									  </div>
 										<div class="row">
 											<div class="col-md-12 text-center">
 												<p><a href="../checkout.html" class="btn btn-primary">Checkout</a></p>
