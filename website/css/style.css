@@ -7567,7 +7567,7 @@ h1, h2, h3, h4, h5,
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        height: 600px;
+        height: 800px;
         position: relative; }
         #colorlib-hero .flexslider .slides li .overlay {
           position: absolute;
@@ -8281,6 +8281,9 @@ h1, h2, h3, h4, h5,
 
 .about-wrap {
   padding: 0 2em; }
+.about-wrap p{
+  text-align: justify;
+}
   @media (max-width: 767.98px) {
     .about-wrap {
       padding: 0; } }
